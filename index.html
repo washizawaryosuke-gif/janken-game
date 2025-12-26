@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ジャンケンゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 id="message">クリックして開始</h1>
+
+  <div id="info">
+  <div id="goal">目標：10連勝で勝利</div>
+  <div id="streak">現在の連勝：0</div>
+  <div id="speed">スピード Lv.1</div>
+</div>
+
+  <img id="character" src="jan.png">
+
+<div id="lives"></div>
+
+<div id="buttons">
+  <img src="btn_rock.png" class="hand-button" onclick="playerHand('rock')">
+  <img src="btn_scissors.png" class="hand-button" onclick="playerHand('scissors')">
+  <img src="btn_paper.png" class="hand-button" onclick="playerHand('paper')">
+</div>
+
+<button id="retryButton" onclick="retryGame()">リトライ</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
