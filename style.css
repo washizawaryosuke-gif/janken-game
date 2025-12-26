@@ -1,0 +1,90 @@
+body {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* メッセージ表示 */
+#message {
+  font-size: 28px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* キャラクター立ち絵 */
+#character {
+  width: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* グーチョキパーを並べる箱 */
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* 画像ボタン（グー・チョキ・パー） */
+.hand-button {
+  width: 120px;
+  cursor: pointer;
+}
+
+.hand-button:hover {
+  transform: scale(1.1);
+}
+
+/* 通常のボタン（リトライなど） */
+button {
+  font-size: 20px;
+  padding: 15px 30px;   /* ← ③-3反映 */
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* リトライボタン（最初は非表示） */
+#retryButton {
+  display: none;
+  margin-top: 30px;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+
+/* 目標・連勝表示エリア */
+#info {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+
+/* 目標 */
+#goal {
+  opacity: 0.8;
+}
+
+/* 連勝カウンター */
+#streak {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#speed {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#lives {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 15px 0;
+}
+
+.life-heart {
+  width: 24px;
+  height: 24px;
+}
