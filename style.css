@@ -15,16 +15,18 @@ body {
   color: white;
   font-family: sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 8px 0;   /* ← 上下だけ少し余白 */
   display: flex;
   justify-content: center;
 }
 
 /* ゲーム全体のラッパー */
 #game-wrapper {
-  max-width: 480px;       /* スマホ向け横幅上限 */
+  width: 100%;
+  max-width: 420px;       /* スマホ向け横幅上限 */
   margin: 0 auto;         /* 左右中央寄せ */
-  padding: 0 10px;        /* 左右余白を少なめ */
+  padding: 0 16px;        /* 左右余白を少なめ */
+  box-sizing: border-box; /* ← 重要 */
   display: flex;
   flex-direction: column; /* 縦積み */
   align-items: center;    /* 中央揃え */
@@ -96,7 +98,8 @@ body {
 
 /* 画像ボタン（グー・チョキ・パー） */
 .hand-button {
-  max-width: 30%;  /* 横幅をボタンの比率で調整 */
+  width: 28%;
+  max-width: 110px;
   height: auto;
   cursor: pointer;
 }
