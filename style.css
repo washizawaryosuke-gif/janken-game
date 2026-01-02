@@ -22,7 +22,7 @@ body {
 
 /* ゲーム全体のラッパー */
 #game-wrapper {
-  max-width: 420px;       /* スマホ向け横幅上限 */
+  max-width: 480px;       /* スマホ向け横幅上限 */
   margin: 0 auto;         /* 左右中央寄せ */
   padding: 0 10px;        /* 左右余白を少なめ */
   display: flex;
