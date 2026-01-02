@@ -44,7 +44,7 @@ body {
 #character {
   max-width: 100%;        /* 画面幅に合わせる */
   max-width: 250px;      /* PC・大画面用の上限 */
-  max-height: 37vh;      /* ← ここが最重要 */
+  max-height: 35vh;      /* ← ここが最重要 */
   height: auto;
   margin: 12px 0;
   display: block;
